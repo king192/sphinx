@@ -1,2 +1,13 @@
 sphinx php api
 遵循psr4
+
+安装php sphinx扩展的情况下自动切换扩展类否则采用sphinxapi类
+
+**用法示例：**
+```
+	$options = [
+
+    ];
+    $s = new \think\sphinx\sphinx($options);
+    $res = $s->doQuery();
+```
