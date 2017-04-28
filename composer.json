@@ -1,6 +1,6 @@
 {
-    "name": "king192/wechat_oauth",
-    "description": "weixin oauth",
+    "name": "king192/sphinx",
+    "description": "sphinx api for php",
     "authors": [
         {
             "name": "xhq",
