@@ -1,0 +1,19 @@
+{
+    "name": "king192/sphinx",
+    "description": "sphinx api for php",
+    "authors": [
+        {
+            "name": "xhq",
+            "email": "git@yunshare.net"
+        }
+    ],
+    "license": "Apache-2.0",
+    "require": {
+        "king192/sphinx": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "king192\\sphinx\\": "src/"
+        }
+    }
+}
