@@ -1,8 +1,8 @@
 <?php
-namespace think\sphinx;
-use think\sphinx\sphinx\sphinxClient;
+namespace king192\sphinx;
+use king192\sphinx\sphinx\sphinxClient;
 if (!class_exists('sphinxClient')) {
-	new \think\sphinx\sphinx\configSphinx();
+	new \king192\sphinx\sphinx\configSphinx();
 }
 
 // 		echo 'ttt';

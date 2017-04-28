@@ -1,5 +1,5 @@
 <?php
-namespace think\sphinx\sphinx;
+namespace king192\sphinx\sphinx;
 //
 // $Id$
 //
