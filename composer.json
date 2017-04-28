@@ -1,0 +1,11 @@
+{
+    "name": "king192/wechat_oauth",
+    "description": "weixin oauth",
+    "authors": [
+        {
+            "name": "xhq",
+            "email": "git@yunshare.net"
+        }
+    ],
+    "require": {}
+}

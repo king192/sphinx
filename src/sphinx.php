@@ -10,7 +10,7 @@ if (!class_exists('sphinxClient')) {
 // 		exit;
 class sphinx {
 	protected $options = array(
-	'q' => "test",
+	'q' => "ttty",
 	'sql' => "",
 	'mode' => SPH_MATCH_ALL,
 	'host' => "127.0.0.1",
@@ -35,7 +35,8 @@ class sphinx {
 		} else {
 			$this->cl = new \sphinxClient();
 		}
-		$this->options = array_merge($options,$this->options);
+		$this->options = array_merge($this->options,$options);
+		// dump($this->options);
 	}
 ////////////
 // do query
