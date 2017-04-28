@@ -56,6 +56,9 @@ class sphinx {
 		$res = $this->cl->Query ( $this->options['q'], $this->options['index'] );
 		return $res;
 	}
+	public function api(){
+		return $this->cl;
+	}
 ////////////////
 // print me out
 ////////////////
