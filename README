@@ -8,6 +8,6 @@ sphinx php api
 	$options = [
 
     ];
-    $s = new \think\sphinx\sphinx($options);
+    $s = new \king192\sphinx\sphinx($options);
     $res = $s->doQuery();
 ```
