@@ -24,6 +24,7 @@ class sphinx {
 	'sortby' => "",
 	'sortexpr' => "",
 	'limit' => 20,
+	'offset' => 0,
 	'ranker' => SPH_RANK_PROXIMITY_BM25,
 	'select' => "",
 	);
@@ -52,7 +53,7 @@ class sphinx {
 		if ( !empty($this->options['sortexpr']) )			$this->cl->SetSortMode ( SPH_SORT_EXPR, $this->options['sortexpr'] );
 		if ( $this->options['distinct'] )			$this->cl->SetGroupDistinct ( $this->options['distinct'] );
 		if ( $this->options['select'] )				$this->cl->SetSelect ( $this->options['select'] );
-		if ( $this->options['limit'] )				$this->cl->SetLimits ( 0, $this->options['limit'], ( $this->options['limit']>1000 ) ? $this->options['limit'] : 1000 );
+		if ( $this->options['limit'] )				$this->cl->SetLimits ( $this->options['offset'], $this->options['limit'], ( $this->options['limit']>1000 ) ? $this->options['limit'] : 1000 );
 		$this->cl->SetRankingMode ( $this->options['ranker'] );
 		$res = $this->cl->Query ( $this->options['q'], $this->options['index'] );
 		return $res;
